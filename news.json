@@ -10,5 +10,11 @@
     "image": "https://picsum.photos/801/500",
     "desc": "Tampilan baru lebih cepat dan ringan.",
     "url": "https://github.com/"
+  },
+  {
+    "title": "Judul baru",
+    "image": "https://picsum.photos/800/500",
+    "desc": "deskripsi",
+    "url": "https://github.com/"
   }
 ]
