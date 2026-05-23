@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ViralFit News</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f4f4f4;
+  color:#222;
+}
+
+header{
+  background:#fff;
+  padding:15px 20px;
+  font-size:22px;
+  font-weight:bold;
+  border-bottom:1px solid #ddd;
+  position:sticky;
+  top:0;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px;
+  display:grid;
+  grid-template-columns:2.5fr 1fr;
+  gap:15px;
+}
+
+/* HERO */
+.hero{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:15px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.hero img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.hero-content{
+  padding:15px;
+}
+
+.hero-title{
+  font-size:20px;
+  font-weight:bold;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:15px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:scale(1.01);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:12px;
+}
+
+.title{
+  font-weight:bold;
+  margin-bottom:5px;
+}
+
+/* SIDEBAR */
+.sidebar{
+  background:#fff;
+  padding:15px;
+  border-radius:12px;
+  height:fit-content;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+a{text-decoration:none;color:inherit;}
+
+@media(max-width:768px){
+  .container{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>🔥 ViralFit News</header>
+
+<div class="container">
+
+  <!-- MAIN -->
+  <div>
+
+    <div id="hero"></div>
+    <div id="news"></div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h3>🔥 Trending</h3>
+    <p>AI Viral Tools</p>
+    <p>Shorts Strategy</p>
+    <p>GitHub Auto System</p>
+  </div>
+
+</div>
+
+<script>
+const API = "https://raw.githubusercontent.com/viralfit/viral-news/refs/heads/main/news.json";
+
+fetch(API)
+.then(res => res.json())
+.then(data => {
+
+  // HERO (berita pertama)
+  const hero = document.getElementById("hero");
+  hero.innerHTML = `
+    <a href="${data[0].url}">
+      <div class="hero">
+        <img src="${data[0].image}">
+        <div class="hero-content">
+          <div class="hero-title">${data[0].title}</div>
+          <div>${data[0].desc}</div>
+        </div>
+      </div>
+    </a>
+  `;
+
+  // NEWS LIST
+  const news = document.getElementById("news");
+
+  data.slice(1).forEach(item => {
+    news.innerHTML += `
+      <a href="${item.url}">
+        <div class="card">
+          <img src="${item.image}">
+          <div class="card-content">
+            <div class="title">${item.title}</div>
+            <div>${item.desc}</div>
+          </div>
+        </div>
+      </a>
+    `;
+  });
+
+});
+</script>
+
+</body>
+</html>
