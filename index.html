@@ -90,6 +90,7 @@ header{
 /* HERO */
 
 .hero{
+  position:relative;
   background:#fff;
   border-radius:15px;
   overflow:hidden;
@@ -204,6 +205,21 @@ a{
   height:260px;
 }
 
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.6),transparent);
+}
+
+.hero-content{
+  position:absolute;
+  bottom:0;
+  left:0;
+  color:white;
+  z-index:2;
+}
+  
 }
 
 </style>
