@@ -1,26 +1,99 @@
 {
   "breaking": [
+    "AI Edit Video Otomatis",
+    "YouTube Shorts Rahasia",
     "Website ViralFit Update",
-    "AI Viral Tool 2026",
-    "AI Viral Tool 2026"
+    "AI Thumbnail Generator"
   ],
   "posts": [
     {
-      "title": "TikTok Strategy Viral",
+      "title": "AI Edit Video Otomatis",
       "image": "https://picsum.photos/800/500",
-      "desc": "Tutorial konten pendek viral terbaru.",
+      "desc": "AI membantu creator lebih cepat berkembang.",
       "url": "https://viralfit.github.io/viral/"
     },
     {
-      "title": "AI Viral Tool 2026",
+      "title": "TikTok Strategy Viral",
       "image": "https://picsum.photos/801/500",
-      "desc": "Update sistem AI dan media otomatis.",
+      "desc": "Konten viral semakin mudah dibuat.",
       "url": "https://viralfit.github.io/viral/"
     },
     {
       "title": "YouTube Shorts Rahasia",
       "image": "https://picsum.photos/802/500",
+      "desc": "Tips meningkatkan views dengan AI.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Content Generator Baru",
+      "image": "https://picsum.photos/803/500",
+      "desc": "Website media otomatis semakin populer.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Thumbnail Generator",
+      "image": "https://picsum.photos/804/500",
+      "desc": "Tips meningkatkan views dengan AI.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "YouTube Shorts Rahasia",
+      "image": "https://picsum.photos/805/500",
+      "desc": "Konten viral semakin mudah dibuat.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "Trend Creator 2026",
+      "image": "https://picsum.photos/806/500",
+      "desc": "Creator mulai memakai AI otomatis.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "TikTok Strategy Viral",
+      "image": "https://picsum.photos/807/500",
+      "desc": "AI membantu creator lebih cepat berkembang.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "Tutorial Viral Shorts",
+      "image": "https://picsum.photos/808/500",
+      "desc": "Creator mulai memakai AI otomatis.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "YouTube Shorts Rahasia",
+      "image": "https://picsum.photos/809/500",
+      "desc": "AI membantu creator lebih cepat berkembang.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Content Generator Baru",
+      "image": "https://picsum.photos/810/500",
+      "desc": "Rahasia algoritma terbaru platform video.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Edit Video Otomatis",
+      "image": "https://picsum.photos/811/500",
+      "desc": "Strategi terbaru membuat konten viral otomatis.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Thumbnail Generator",
+      "image": "https://picsum.photos/812/500",
       "desc": "Update sistem AI dan media otomatis.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Viral Tool 2026",
+      "image": "https://picsum.photos/813/500",
+      "desc": "Tips meningkatkan views dengan AI.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Content Generator Baru",
+      "image": "https://picsum.photos/814/500",
+      "desc": "Tips meningkatkan views dengan AI.",
       "url": "https://viralfit.github.io/viral/"
     }
   ]
