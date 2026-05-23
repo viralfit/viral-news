@@ -1,7 +1,27 @@
 {
   "breaking": [
-    "Loading AI News"
+    "Website ViralFit Update",
+    "AI Viral Tool 2026",
+    "AI Viral Tool 2026"
   ],
-
-  "posts": []
+  "posts": [
+    {
+      "title": "TikTok Strategy Viral",
+      "image": "https://picsum.photos/800/500",
+      "desc": "Tutorial konten pendek viral terbaru.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "AI Viral Tool 2026",
+      "image": "https://picsum.photos/801/500",
+      "desc": "Update sistem AI dan media otomatis.",
+      "url": "https://viralfit.github.io/viral/"
+    },
+    {
+      "title": "YouTube Shorts Rahasia",
+      "image": "https://picsum.photos/802/500",
+      "desc": "Update sistem AI dan media otomatis.",
+      "url": "https://viralfit.github.io/viral/"
+    }
+  ]
 }
