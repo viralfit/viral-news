@@ -16,7 +16,7 @@
 
 body{
   font-family:Arial,sans-serif;
-  background:#f7f7f7;
+  background:#f5f5f5;
   color:#222;
 }
 
@@ -24,7 +24,7 @@ body{
 
 header{
   background:#fff;
-  padding:15px 20px;
+  padding:16px 22px;
   border-bottom:1px solid #eee;
   position:sticky;
   top:0;
@@ -32,7 +32,7 @@ header{
 }
 
 .logo{
-  font-size:26px;
+  font-size:28px;
   font-weight:bold;
 }
 
@@ -40,10 +40,10 @@ header{
 
 .navbar{
   background:#fff;
-  padding:12px 20px;
+  padding:12px 22px;
   border-bottom:1px solid #eee;
   display:flex;
-  gap:20px;
+  gap:22px;
   overflow:auto;
 }
 
@@ -56,13 +56,13 @@ header{
 }
 
 .navbar a:hover{
-  color:#c40000;
+  color:#d00000;
 }
 
 /* BREAKING */
 
 .breaking{
-  background:#c40000;
+  background:#d00000;
   color:#fff;
   display:flex;
   align-items:center;
@@ -120,12 +120,11 @@ header{
 /* HERO */
 
 .hero{
-  background:#fff;
-  border-radius:18px;
-  overflow:hidden;
   position:relative;
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
   box-shadow:0 2px 8px rgba(0,0,0,0.05);
-  cursor:pointer;
   transition:.25s;
 }
 
@@ -135,7 +134,7 @@ header{
 
 .hero img{
   width:100%;
-  height:360px;
+  height:380px;
   object-fit:cover;
 }
 
@@ -145,7 +144,7 @@ header{
   inset:0;
   background:linear-gradient(
     to top,
-    rgba(0,0,0,.55),
+    rgba(0,0,0,.5),
     transparent
   );
 }
@@ -154,16 +153,16 @@ header{
   position:absolute;
   bottom:0;
   left:0;
+  z-index:2;
   padding:28px;
   color:#fff;
-  z-index:2;
 }
 
 .hero-title{
-  font-size:32px;
+  font-size:34px;
+  line-height:1.3;
   font-weight:bold;
   margin-bottom:10px;
-  line-height:1.3;
 }
 
 /* SIDE */
@@ -178,8 +177,11 @@ header{
   background:#fff;
   border-radius:18px;
   overflow:hidden;
+  display:flex;
+  gap:12px;
+  padding:10px;
+  align-items:center;
   box-shadow:0 2px 8px rgba(0,0,0,0.05);
-  cursor:pointer;
   transition:.25s;
 }
 
@@ -188,13 +190,14 @@ header{
 }
 
 .small-card img{
-  width:100%;
-  height:110px;
+  width:120px;
+  height:90px;
   object-fit:cover;
+  border-radius:12px;
 }
 
 .small-content{
-  padding:12px;
+  flex:1;
 }
 
 .small-content b{
@@ -215,7 +218,6 @@ header{
   border-radius:18px;
   overflow:hidden;
   box-shadow:0 2px 8px rgba(0,0,0,0.05);
-  cursor:pointer;
   transition:.25s;
 }
 
@@ -225,23 +227,23 @@ header{
 
 .card img{
   width:100%;
-  height:180px;
+  height:190px;
   object-fit:cover;
 }
 
 .card-content{
-  padding:15px;
+  padding:16px;
 }
 
 .title{
   font-size:18px;
   font-weight:bold;
-  margin-bottom:8px;
   line-height:1.4;
+  margin-bottom:8px;
 }
 
 .card-content p{
-  color:#555;
+  color:#666;
   line-height:1.6;
   font-size:14px;
 }
@@ -262,11 +264,21 @@ a{
   }
 
   .hero img{
-    height:250px;
+    height:260px;
   }
 
   .hero-title{
     font-size:24px;
+  }
+
+  .small-card{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .small-card img{
+    width:100%;
+    height:180px;
   }
 
 }
@@ -287,10 +299,10 @@ a{
 <nav class="navbar">
 
   <a href="#">AI</a>
+  <a href="#">Technology</a>
   <a href="#">Viral</a>
   <a href="#">Shorts</a>
   <a href="#">TikTok</a>
-  <a href="#">Technology</a>
 
 </nav>
 
@@ -358,7 +370,6 @@ async function loadNews(){
             font-size:12px;
             margin-bottom:8px;
             font-weight:bold;
-            opacity:.9;
           ">
             🔥 HEADLINE NEWS
           </div>
@@ -383,7 +394,7 @@ async function loadNews(){
     
     `;
 
-    // SIDE
+    // SIDE NEWS
 
     let sideHTML = "";
 
@@ -427,7 +438,7 @@ async function loadNews(){
     document.getElementById("sideNews")
       .innerHTML = sideHTML;
 
-    // BOTTOM
+    // BOTTOM NEWS
 
     let bottomHTML = "";
 
@@ -448,7 +459,6 @@ async function loadNews(){
               color:gray;
               margin-bottom:6px;
               font-weight:bold;
-              letter-spacing:.5px;
             ">
               🔥 TRENDING • 2026
             </div>
