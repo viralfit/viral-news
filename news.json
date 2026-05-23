@@ -2,26 +2,24 @@
   "breaking": [
     "Viral AI Tool Baru 2026",
     "Update Website ViralFit",
-    "Tutorial Konten Viral Shorts"
+    "Tutorial Shorts Viral"
   ],
+
   "posts": [
+
     {
       "title": "Viral AI Tool Gratis 2026",
       "image": "https://picsum.photos/800/500",
       "desc": "Tool AI untuk bikin konten viral otomatis.",
       "url": "https://viralfit.github.io/viral/"
     },
+
     {
       "title": "Update Website ViralFit",
       "image": "https://picsum.photos/801/500",
       "desc": "Tampilan baru lebih cepat dan ringan.",
       "url": "https://viralfit.github.io/viral/"
-    },
-    {
-      "title": "Tutorial Viral Shorts",
-      "image": "https://picsum.photos/802/500",
-      "desc": "Cara bikin konten viral di TikTok & YouTube Shorts.",
-      "url": "https://viralfit.github.io/viral/"
     }
+
   ]
 }
