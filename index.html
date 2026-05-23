@@ -20,7 +20,7 @@
 
 body{
   font-family:Arial,sans-serif;
-  background:#f1f1f1;
+  background:#eceff1;
   color:#222;
 }
 
@@ -56,6 +56,7 @@ header{
   color:#222;
   font-weight:bold;
   white-space:nowrap;
+  transition:.2s;
 }
 
 .navbar a:hover{
@@ -92,6 +93,7 @@ header{
 }
 
 @keyframes marquee{
+
   0%{
     transform:translateX(0);
   }
@@ -99,6 +101,7 @@ header{
   100%{
     transform:translateX(-100%);
   }
+
 }
 
 /* CONTAINER */
@@ -126,7 +129,9 @@ header{
   overflow:hidden;
   position:relative;
   box-shadow:0 3px 10px rgba(0,0,0,0.08);
-  transition:0.25s;
+  border:1px solid #eee;
+  cursor:pointer;
+  transition:.25s;
 }
 
 .hero:hover{
@@ -143,7 +148,11 @@ header{
   content:'';
   position:absolute;
   inset:0;
-  background:linear-gradient(to top,rgba(0,0,0,.7),transparent);
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.75),
+    transparent
+  );
 }
 
 .hero-content{
@@ -175,7 +184,9 @@ header{
   border-radius:15px;
   overflow:hidden;
   box-shadow:0 3px 10px rgba(0,0,0,0.08);
-  transition:0.25s;
+  border:1px solid #eee;
+  cursor:pointer;
+  transition:.25s;
 }
 
 .small-card:hover{
@@ -212,7 +223,9 @@ header{
   border-radius:15px;
   overflow:hidden;
   box-shadow:0 3px 10px rgba(0,0,0,0.08);
-  transition:0.25s;
+  border:1px solid #eee;
+  cursor:pointer;
+  transition:.25s;
 }
 
 .card:hover{
@@ -316,14 +329,14 @@ a{
 
 <div class="container">
 
-  <!-- TOP -->
-
   <div class="top-grid">
 
     <!-- HERO -->
+
     <div id="hero"></div>
 
     <!-- SIDE -->
+
     <div id="sideNews" class="side-news"></div>
 
   </div>
@@ -395,7 +408,7 @@ async function loadNews(){
     
     `;
 
-    // RIGHT SMALL NEWS
+    // SIDE NEWS
 
     let sideHTML = "";
 
@@ -436,8 +449,8 @@ async function loadNews(){
 
     });
 
-    document.getElementById("sideNews").innerHTML =
-      sideHTML;
+    document.getElementById("sideNews")
+      .innerHTML = sideHTML;
 
     // BOTTOM NEWS
 
@@ -487,8 +500,8 @@ async function loadNews(){
 
     });
 
-    document.getElementById("bottomNews").innerHTML =
-      bottomHTML;
+    document.getElementById("bottomNews")
+      .innerHTML = bottomHTML;
 
   }
 
@@ -496,8 +509,8 @@ async function loadNews(){
 
     console.log(err);
 
-    document.getElementById("bottomNews").innerHTML =
-      "❌ Gagal load berita";
+    document.getElementById("bottomNews")
+      .innerHTML = "❌ Gagal load berita";
 
   }
 
